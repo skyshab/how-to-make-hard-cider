@@ -1,0 +1,176 @@
+/* purgecss start ignore */
+@tailwind base;
+
+/* Most of your custom classes and styles should go right down here ⬇️
+   (Things like @font-face declarations, styles for `h1`, `p`, etc.)
+*/
+
+a {
+    @apply text-primary;
+}
+
+a:hover,
+a:focus {
+    @apply underline;
+}
+
+/* .navWrapper.toggle-open ul {
+    display: block;
+}
+
+.navWrapper.toggle-closed ul {
+    display: none;
+} */
+
+@tailwind components;
+/* purgecss end ignore */
+
+@tailwind utilities;
+
+.video-wrapper {
+    position: relative;
+    margin-bottom: 2rem;
+}
+.video-wrapper::before {
+    content: '';
+    display: block;
+    padding-bottom: calc(100% / (16 / 9));
+}
+.video-wrapper > iframe {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+}
+
+.image-wrapper .gatsby-resp-image-wrapper {
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.image-wrapper.alignleft .gatsby-resp-image-wrapper {
+    float: left;
+    margin-right: 2rem !important;
+}
+
+.image-wrapper.alignright .gatsby-resp-image-wrapper {
+    float: right;
+    margin-left: 2rem !important;
+}
+
+.max-w-200 {
+    max-width: 200px;
+}
+
+/* Typography */
+
+:root {
+    --typography--font-size: 16px;
+    --typography--line-height: 1.5;
+
+    --typography--h1--font-size: 2em;
+    --typography--h2--font-size: 1.63em;
+    --typography--h3--font-size: 1.38em;
+    --typography--h4--font-size: 1.13em;
+    --typography--h5--font-size: 1em;
+    --typography--h6--font-size: 1em;
+
+    --typography--h1--line-height: 1.05;
+    --typography--h2--line-height: 1.25;
+    --typography--h3--line-height: 1.25;
+    --typography--h4--line-height: 1.22;
+    --typography--h5--line-height: 1.05;
+    --typography--h6--line-height: 1.05;
+}
+
+@media (min-width: 768px) {
+    :root {
+        --typography--font-size: 18px;
+        --typography--line-height: 1.6;
+
+        --typography--h1--font-size: 2.5em;
+        --typography--h2--font-size: 2em;
+        --typography--h3--font-size: 1.5em;
+        --typography--h4--font-size: 1.13em;
+    }
+}
+
+@media (min-width: 1024px) {
+    :root {
+        --typography--h1--font-size: 3em;
+        --typography--h2--font-size: 2.25em;
+        --typography--h3--font-size: 1.75em;
+        --typography--h4--font-size: 1.25em;
+    }
+}
+
+body {
+    font-size: var(--typography--font-size);
+    line-height: var(--typography--line-height);
+}
+
+p,
+ul,
+ol,
+table,
+blockquote {
+    margin-bottom: calc(1rem * var(--typography--line-height));
+}
+
+hr {
+    margin: calc(1rem * var(--typography--line-height)) 0;
+    clear: both;
+}
+
+h1 {
+    font-size: var(--typography--h1--font-size);
+    line-height: var(--typography--h1--line-height);
+    margin-bottom: 2rem;
+}
+
+h2 {
+    font-size: var(--typography--h2--font-size);
+    line-height: var(--typography--h2--line-height);
+    margin-bottom: 1rem;
+}
+
+h3 {
+    font-size: var(--typography--h3--font-size);
+    line-height: var(--typography--h3--line-height);
+    margin-bottom: 0.62rem;
+}
+
+h4 {
+    font-size: var(--typography--h4--font-size);
+    line-height: var(--typography--h4--line-height);
+}
+
+h5 {
+    font-size: var(--typography--h5--font-size);
+    line-height: var(--typography--h5--line-height);
+}
+
+h6 {
+    font-size: var(--typography--h6--font-size);
+    line-height: var(--typography--h6--line-height);
+}
+
+.page-content ul,
+.page-content ol {
+    list-style-position: outside;
+    padding-left: 1.15em;
+}
+
+.page-content ul {
+    list-style-type: disc;
+}
+
+ol {
+    list-style-type: decimal;
+}
+
+.page-content li > ul,
+.page-content li > ol {
+    margin: 0;
+}
