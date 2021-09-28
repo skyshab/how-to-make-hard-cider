@@ -70,7 +70,7 @@ Here is an equipment list for **one gallon** of hard cider (each item will be de
 -   A bottle filler hose extension ([\$7 on Amazon,](http://www.amazon.com/gp/product/B007VFBLNC/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B007VFBLNC&linkCode=as2&tag=howtomakeha07-20&linkId=DA6BNYZ4PKODFC2L)saves a big mess)
 -   [Hydrometer (Spend \$6 on Amazon](http://www.amazon.com/gp/product/B000E60U6Y/ref=as_li_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=B000E60U6Y&linkCode=as2&tag=howtomakeha07-20&linkId=BU23FO2DTVMISCKV) and get this amazing tool that allows you to “see” what your cider is doing.) Helps you to _know_ when to rack or bottle, not guess.
 
-Ready to get started? Let’s begin with [Clean and Sterile](sterile.html).
+Ready to get started? Let’s begin with [Clean and Sterile](/clean-and-sterile).
 
 ## Curious about the Amazon links all over this site?
 
